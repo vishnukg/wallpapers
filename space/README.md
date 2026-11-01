@@ -1,6 +1,19 @@
 # Space wallpapers
 
-## Corona Australis — current wallpaper
+## Teal Milky Way
+
+![A teal-toned Milky Way starfield — Lucas Bellator, Unsplash](teal-milky-way.jpg)
+
+Credit: **Lucas Bellator** on Unsplash.
+
+- File: `teal-milky-way.jpg`
+- Resolution: 4240 × 2832 pixels, original downloadable JPEG; no resizing or editing.
+- Source: [Unsplash photo C0OD8OM-oM0](https://unsplash.com/photos/C0OD8OM-oM0).
+- License: [Unsplash License](https://unsplash.com/license) — free to use, copy and modify; attribution appreciated rather than required.
+
+A dark teal sky with the Milky Way's dust lanes along one side, so the centre stays quiet behind windows. Larger than every display in linux/configs/hyprmoncfg/profiles (up to 3840 × 2160), so `cover` only ever crops it, never upscales.
+
+## Corona Australis
 
 ![The R Coronae Australis region — ESO](corona-australis.jpg)
 
