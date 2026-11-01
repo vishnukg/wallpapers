@@ -5,13 +5,13 @@
 ![Blue mountain silhouette against a green sun on black](blue-mountain-green-sun.jpg)
 
 - File: `blue-mountain-green-sun.jpg`
-- A recolour of `synthwave-mountain-sun.jpg` below. It was converted to HSL and only the hue was remapped (purple to blue, pink to green), so the black stays black. The green is then set to a muted pastel mint (`#8bdaad`): the sun's hue is pinned, and its saturation and lightness are scaled so the flat sun lands on that colour while the glow and edges scale with it:
+- A recolour of `synthwave-mountain-sun.jpg` below. It was converted to HSL and only the hue was remapped (purple to blue, pink to green), so the black stays black. The green is then set to a pastel mint with a bit more saturation (`#74dea0`): the sun's hue is pinned, and its saturation and lightness are scaled so the flat sun lands on that colour while the glow and edges scale with it:
 
   ```sh
   magick synthwave-mountain-sun.jpg -colorspace HSL -channel R \
     -fx "hh = u < 0.1 ? u + 1 : u; qq = 0.60 - 0.9*(hh-0.75); hh >= 0.65 ? (qq < 0 ? qq + 1 : qq) : u" \
-    -channel G -fx "u.r >= 0.3 && u.r <= 0.5 ? u*0.6417 : u" \
-    -channel B -fx "u.r >= 0.3 && u.r <= 0.5 ? u*1.1227 : u" \
+    -channel G -fx "u.r >= 0.3 && u.r <= 0.5 ? u*0.763 : u" \
+    -channel B -fx "u.r >= 0.3 && u.r <= 0.5 ? u*1.0585 : u" \
     -channel R -fx "u >= 0.3 && u <= 0.5 ? 0.4044 : u" \
     +channel -colorspace sRGB -quality 92 blue-mountain-green-sun.jpg
   ```
